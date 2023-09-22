@@ -3,50 +3,62 @@
     "title": "Intentional self harm by state and territory",
     "width": 800,
     "height": 450,
-    "projection": {"type": "equalEarth"},
-    "data": {
-        "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/Data%20Visualisation%202/js/ne_10m.json",
-        "format": {
-            "type": "topojson",
-            "feature": "ne_10m_admin_1_states_provinces"
-        }
-    },
-    "transform": [
+    "projection": {"type": "mercator"},
+    "layer": [
         {
-            "lookup": "properties.name",
-            "from": {
-                "data": {
-                    "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/Data%20Visualisation%202/data/intentional_self_harm_by%20state_and_territory.csv",
-                },
-                "key": "State/Territory of Usual Residence",
-                "fields": ["Total"]
-            }
-        },
-        {
-            "calculate": "datum.Active + 0.1", "as": "Total Deaths"
-        }
-    ],
-    "mark": {
-        "type": "geoshape"
-    },
-    "encoding": {
-        "color": {
-            "field": "Total Cases",
-            "type": "quantitative",
-            "scale": {
-                "type": "log"
-            }
-        },
-        "tooltip": [
-            {
-                "field": "properties.name",
-                "type": "nominal",
-                "title": "State/Territory"
+            "data": {
+                "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/Data%20Visualisation%202/js/ne_10m.json",
+                "format": {
+                    "type": "topojson",
+                    "feature": "ne_10m_graticules_30"
+                }
             },
-            {
-                "field": "Total",
-                "type": "quantitative"
+            "mark": {
+                "type": "geoshape",
+                "fill": "lightgray",
+                "stroke": "lavender"
             }
-        ]
-    }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/Data%20Visualisation%202/js/ne_10m.json",
+                "format": {
+                    "type": "topojson",
+                    "feature": "ne_10m_admin_1_states_provinces"
+                }
+            },
+            "transform": [
+                {
+                    "lookup": "properties.name",
+                    "from": {
+                        "data": {
+                            "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/Data%20Visualisation%202/data/intentional_self_harm_by%20state_and_territory.csv"
+                        },
+                        "key": "State_Territory",
+                        "fields": ["Total"]
+                    }
+                }
+            ],
+            "mark": {
+                "type": "geoshape"
+            },
+            "encoding": {
+                "color": {
+                    "field": "Total",
+                    "type": "quantitative"
+                },
+                "tooltip": [
+                    {
+                        "field": "properties.name",
+                        "type": "nominal",
+                        "title": "State/Territory"
+                    },
+                    {
+                        "field": "Total",
+                        "type": "quantitative"
+                    }
+                ]
+            }
+        }
+    ]
 }
