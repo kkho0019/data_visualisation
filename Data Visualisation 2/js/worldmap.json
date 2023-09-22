@@ -10,20 +10,6 @@
                 "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/Data%20Visualisation%202/js/ne_10m.json",
                 "format": {
                     "type": "topojson",
-                    "feature": "ne_10m_graticules_30"
-                }
-            },
-            "mark": {
-                "type": "geoshape",
-                "fill": "lightgray",
-                "stroke": "lavender"
-            }
-        },
-        {
-            "data": {
-                "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/Data%20Visualisation%202/js/ne_10m.json",
-                "format": {
-                    "type": "topojson",
                     "feature": "ne_10m_admin_1_states_provinces"
                 }
             },
@@ -37,6 +23,10 @@
                         "key": "State_Territory",
                         "fields": ["Total"]
                     }
+                },
+                {
+                    "calculate": "datum.Total",
+                    "as": "Total Deaths"
                 }
             ],
             "mark": {
@@ -44,7 +34,7 @@
             },
             "encoding": {
                 "color": {
-                    "field": "Total",
+                    "field": "Total Deaths",
                     "type": "quantitative"
                 },
                 "tooltip": [
@@ -58,6 +48,20 @@
                         "type": "quantitative"
                     }
                 ]
+            }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/Data%20Visualisation%202/js/ne_10m.json",
+                "format": {
+                    "type": "topojson",
+                    "feature": "ne_10m_graticules_30"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": null,
+                "stroke": "white"
             }
         }
     ]
