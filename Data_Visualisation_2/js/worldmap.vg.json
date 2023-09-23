@@ -18,7 +18,7 @@
                     "lookup": "properties.name",
                     "from": {
                         "data": {
-                            "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/Data_Visualisation_2/data/intentional_self_harm_by%20state_and_territory.csv"
+                            "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/Data_Visualisation_2/data/intentional_self_harm_by_state_and_territory.csv"
                         },
                         "key": "State_Territory",
                         "fields": ["Total"]
