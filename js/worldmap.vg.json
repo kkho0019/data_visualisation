@@ -7,7 +7,7 @@
     "layer": [
         {
             "data": {
-                "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/js/ne_10m.json",
+                "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/js/ne_10m.topojson",
                 "format": {
                     "type": "topojson",
                     "feature": "ne_10m_admin_1_states_provinces"
@@ -52,7 +52,7 @@
         },
         {
             "data": {
-                "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/js/ne_10m.json",
+                "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/js/ne_10m.topojson",
                 "format": {
                     "type": "topojson",
                     "feature": "ne_10m_graticules_30"
