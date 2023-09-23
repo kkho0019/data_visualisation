@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Intentional self harm by state and territory",
+    "title": "Intentional Self Harm by State and Territory",
     "width": 800,
     "height": 450,
     "projection": {"type": "mercator"},
