@@ -1,0 +1,71 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Intentional Self Harm, Age-specific Death Rates",
+    "data": {
+        "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/data/age_specific_death_rates.csv"
+    },
+    "width": "container",
+    "transform": [
+        {
+            "calculate": "datum.Death_Rate",
+            "as": "Deaths per 100,000 population"
+        }
+    ],
+    "layer": [
+        {
+            "params": [
+                {
+                    "name": "age_range_highlight",
+                    "select": {
+                    "type": "point",
+                    "fields": ["Age"]
+                    },
+                    "bind": "legend"
+                }
+            ],
+            "mark": {
+                "type": "line",
+                "interpolate": "monotone"
+            },
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "timeUnit": "year",
+                    "axis": {
+                        "title": "Year"
+                    }
+                },
+                "y": {
+                    "field": "Death_Rate",
+                    "aggregate": "mean",
+                    "axis": {
+                        "title": "Deaths per 100,000 Population",
+                        "tickCount": 5
+                    }
+                },
+                "color": {
+                    "field": "Age",
+                    "type": "nominal",
+                    "title": "Age Range"
+                },
+                "opacity": {
+                    "condition": {
+                        "param": "age_range_highlight",
+                        "value": 1
+                    },
+                    "value": 0.2
+                },
+                "tooltip": [
+                    {"field": "Age", "type": "nominal", "title": "Age range"},
+                    {"field": "Year", "timeUnit": "year", "title": "Year"},
+                    {
+                        "field": "Deaths per 100,000 population", 
+                        "type": "quantitative",
+                        "format": ".1f"
+                    }
+                ]
+            }
+        }
+    ],
+    "config": {}
+}
