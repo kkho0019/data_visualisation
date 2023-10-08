@@ -1,57 +1,78 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Intentional Self Harm by State and Territory",
+    "title": "Intentional Self Harm by State and Territory (2012-2022)",
     "width": "container",
     "projection": {"type": "mercator"},
+    "params": [
+        {
+            "name": "Year_Selected",
+            "value": 2022,
+            "bind": {
+                "input": "range",
+                "min": 2012,
+                "max": 2022,
+                "step": 1,
+                "name": "Year: "
+            }
+        }
+    ],
     "layer": [
         {
             "data": {
-                "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/js/ne_10m.topojson",
-                "format": {
-                    "type": "topojson",
-                    "feature": "ne_10m_admin_1_states_provinces"
-                }
+                "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/data/intentional_self_harm_by_state_and_territory.csv"
             },
             "transform": [
                 {
-                    "lookup": "properties.name",
-                    "from": {
-                        "data": {
-                            "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/data/intentional_self_harm_by_state_and_territory.csv"
-                        },
-                        "key": "State_Territory",
-                        "fields": ["Standardised_Death_Rate"]
-                    }
+                    "calculate": "(datum.Deaths/datum.Population) * 100000",
+                    "as": "Deaths per 100,000 Population"
                 },
                 {
-                    "calculate": "datum.Standardised_Death_Rate",
-                    "as": "Deaths per 100,000 Population"
+                    "lookup": "State_Territory",
+                    "from": {
+                        "data": {
+                            "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/js/ne_10m.topojson",
+                            "format": {
+                                "type": "topojson",
+                                "feature": "ne_10m_admin_1_states_provinces"
+                            }
+                        },
+                        "key": "properties.name"
+                    },
+                    "as": "geo"
+                },
+                {
+                    "filter": "datum.Year == Year_Selected"
                 }
             ],
             "mark": {
                 "type": "geoshape",
-                "stroke": "black",
+                "stroke": "#000000",
                 "strokeWidth": 0.4
             },
             "encoding": {
+                "shape": {
+                    "field": "geo",
+                    "type": "geojson"
+                },
                 "color": {
                     "field": "Deaths per 100,000 Population",
                     "type": "quantitative",
                     "scale": {
                         "type": "threshold",
-                        "domain": [12,14,16,18],
-                        "range": ["#eff3ff", "#bdd7e7", "#6baed6", "#3182bd", "#08519c"]
+                        "domain": [12,14,16,18,20],
+                        "range": ["#eff3ff", "#c6dbef", "#9ecae1", "#6baed6", "#3182bd", "#08519c"]
                     }
                 },
                 "tooltip": [
                     {
-                        "field": "properties.name",
+                        "field": "State_Territory",
                         "type": "nominal",
                         "title": "State/Territory"
                     },
                     {
                         "field": "Deaths per 100,000 Population",
-                        "type": "quantitative"
+                        "type": "quantitative",
+                        "format": ".1f"
                     }
                 ]
             }
