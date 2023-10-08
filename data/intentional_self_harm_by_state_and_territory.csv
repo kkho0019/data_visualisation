@@ -1,9 +1,89 @@
-State_Territory,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,Total,Standardised_Death_Rate
-New South Wales,727,718,832,839,822,929,940,960,876,880,8523,11.2
-Victoria,514,552,672,686,667,712,691,727,694,675,6590,10.5
-Queensland,631,676,658,761,688,815,805,798,759,783,7374,15.6
-South Australia,197,203,244,233,221,226,209,249,234,226,2242,12.7
-Western Australia,367,336,367,402,373,418,384,415,381,389,3832,14.9
-Tasmania,71,74,69,84,93,79,78,106,87,80,821,15.2
-Northern Territory,48,33,56,48,46,51,47,50,51,46,476,19.7
-Australian Capital Territory,24,37,38,46,28,59,50,53,57,65,457,12.7
+State_Territory,Year,Deaths,Population
+New South Wales,2012,727,7304244
+New South Wales,2013,718,7404032
+New South Wales,2014,832,7508353
+New South Wales,2015,839,7616168
+New South Wales,2016,822,7732858
+New South Wales,2017,929,7855316
+New South Wales,2018,940,7954476
+New South Wales,2019,963,8046748
+New South Wales,2020,910,8110610
+New South Wales,2021,894,8097062
+New South Wales,2022,911,8166525
+Victoria,2012,514,5651091
+Victoria,2013,552,5772669
+Victoria,2014,672,5894917
+Victoria,2015,686,6022322
+Victoria,2016,667,6173172
+Victoria,2017,713,6302608
+Victoria,2018,691,6423038
+Victoria,2019,735,6537305
+Victoria,2020,693,6615046
+Victoria,2021,675,6547822
+Victoria,2022,754,6630258
+Queensland,2012,631,4568687
+Queensland,2013,676,4652824
+Queensland,2014,658,4719653
+Queensland,2015,761,4777692
+Queensland,2016,688,4845152
+Queensland,2017,816,4926380
+Queensland,2018,805,5006623
+Queensland,2019,803,5088847
+Queensland,2020,782,5165613
+Queensland,2021,786,5215814
+Queensland,2022,773,5320711
+South Australia,2012,197,1656725
+South Australia,2013,203,1671488
+South Australia,2014,244,1686945
+South Australia,2015,233,1700668
+South Australia,2016,221,1712843
+South Australia,2017,226,1728673
+South Australia,2018,209,1746137
+South Australia,2019,250,1767395
+South Australia,2020,229,1790355
+South Australia,2021,229,1802601
+South Australia,2022,242,1821086
+Western Australia,2012,367,2425507
+Western Australia,2013,336,2486944
+Western Australia,2014,367,2517608
+Western Australia,2015,402,2540672
+Western Australia,2016,373,2555978
+Western Australia,2017,418,2585720
+Western Australia,2018,384,2617792
+Western Australia,2019,416,2659625
+Western Australia,2020,385,2712912
+Western Australia,2021,390,2749365
+Western Australia,2022,377,2791432
+Tasmania,2012,71,511724
+Tasmania,2013,74,512231
+Tasmania,2014,69,513621
+Tasmania,2015,84,515117
+Tasmania,2016,93,517514
+Tasmania,2017,79,526762
+Tasmania,2018,78,537291
+Tasmania,2019,107,547841
+Tasmania,2020,89,557578
+Tasmania,2021,81,567239
+Tasmania,2022,87,571007
+Northern Territory,2012,48,235915
+Northern Territory,2013,33,241722
+Northern Territory,2014,56,242894
+Northern Territory,2015,48,244692
+Northern Territory,2016,46,245678
+Northern Territory,2017,51,247412
+Northern Territory,2018,47,247095
+Northern Territory,2019,50,246559
+Northern Territory,2020,51,247428
+Northern Territory,2021,46,248151
+Northern Territory,2022,49,250233
+Australian Capital Territory,2012,24,376539
+Australian Capital Territory,2013,37,383257
+Australian Capital Territory,2014,38,388799
+Australian Capital Territory,2015,46,395813
+Australian Capital Territory,2016,28,403104
+Australian Capital Territory,2017,59,415046
+Australian Capital Territory,2018,50,426081
+Australian Capital Territory,2019,53,435730
+Australian Capital Territory,2020,57,444903
+Australian Capital Territory,2021,65,452508
+Australian Capital Territory,2022,55,456889
