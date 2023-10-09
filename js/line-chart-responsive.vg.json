@@ -5,6 +5,7 @@
         "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/data/age_specific_death_rates.csv"
     },
     "width": "container",
+    "height": 300,
     "transform": [
         {
             "calculate": "datum.Death_Rate",
