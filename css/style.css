@@ -1,17 +1,18 @@
 .body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
-    font-weight: 900;
+    font-size: 50px;
+    font-weight: 700;
 }
 
 body {
-    background-color: lightgray;
+    background-color: #cfdff3;
 }
 
 .page {
-    width: 850px;
+    width: 1024px;
     background-color: white;
     margin: auto;
     padding: 50px;
@@ -36,7 +37,7 @@ h1 {
 }
 
 .pure-g {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .small-font {
