@@ -73,7 +73,8 @@
                     {
                         "field": "Deaths per 100,000 Population",
                         "type": "quantitative",
-                        "format": ".1f"
+                        "format": ".1f",
+                        "title": "Deaths per 100K Pop."
                     }
                 ]
             }
