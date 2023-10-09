@@ -1,97 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Intentional Self-harm Deaths (Suicide) in Australia</title>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <title>Intentional Self-harm Deaths (Suicide) in Australia</title>
+    <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
-  <!-- Import pure.css -->
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Import pure.css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
 
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <!-- CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 
 </head>
 <body>
 
- <div class="page">
+    <div class="page">
 
-   <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1-1">
-        <h1>Intentional Self-harm Deaths (Suicide) in Australia</h1>
-        <p>This visualisation shows the distribution of deaths caused by intentional self harm in Australia, categorised by state and territory, and by age groups. 
-        </p>
-      </div>
-    </div>
-  <!-- end pure grid group -->
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+                <h1>Intentional Self-harm Deaths (Suicide) in Australia</h1>
+            </div>
+            <div class="pure-u-1-1">
+                <p>The profound impact of each life lost to suicide on families, friends, workplaces, and the wider community cannot be underestimated. Recent data from the Australian Bureau of Statistics (ABS) reveals that approximately 9 lives are lost to suicide daily. It's estimated that over 10 million Australian adults are connected to someone who has died by suicide, and 1 in 2 young people are affected by suicide before reaching the age of 25. This highlights the urgent need for increased awareness and support surrounding this critical issue.</p>
+            </div>
+        </div>
+        <!-- end pure grid group -->
 
-    <!-- pure grid group -->
-    <div class="pure-g">
-        <div class="pure-u-1-3">
-          <div class="description description-left">
-            <h2>Suicide by State and Territory</h2>
-            <p>The map highlights the stark contrast between regions, with the Northern Territory exhibiting the <b>highest rate</b> at 19.7 per 100,000 people, underscoring a concerning issue. In contrast, Victoria's 10.5 rate sheds light on factors and emphasizes targeted interventions and support.</p>
-          </div>
-        </div>
-        <div class="pure-u-2-3">
-          <div id="vis1" class="vis-container"></div>
-        </div>
-    </div>
-    <!-- end pure grid group -->
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-3">
+                <div class="description description-left">
+                    <h2>Suicide by State and Territory</h2>
+                    <p>
+                        In 2022, the map starkly emphasizes regional differences in suicide rates, with the Northern Territory at 19.6 per 100,000, underscoring the need for urgent interventions. Conversely, New South Wales and Victoria at 11.2 and 11.4 respectively shed light on potential factors and stress the importance of support systems.
+                    </p>
+                    <p>
+                        Analyzing data from 2012 to 2022, a consistent pattern emerges. The Northern Territory consistently records the highest suicide rate, emphasizing the ongoing need for substantial intervention and support. Conversely, New South Wales and Victoria consistently exhibit the lowest rates, suggesting potential successful strategies. This longitudinal view provided by the visualization enhances our understanding of the evolving suicide landscape, reinforcing the necessity for targeted efforts in prevention and support across Australia.
+                    </p>
+                </div>
+            </div>
 
-    <!-- pure grid group -->
-    <div class="pure-g">
-        <div class="pure-u-2-3">
-          <div id="vis2"  class="vis-container"></div>
+            <div class="pure-u-2-3">
+                <div id="vis1" class="vis-container"></div>
+            </div>
         </div>
-        <div class="pure-u-1-3">
-          <div class="description description-right">
-            <h2>Age-standardised Suicide Rates</h2>
-            <p>In order to measure changes over time, age-standardised suicide rates are presented in the graph on the left. Australians aged between 35 to 54, and 85 and above were more likely to die by suicide than those in other age cohorts. The <b>highest death rate</b> of 21.3 was achieved by the 45 to 54 year-old age group at 2015.</p>
-          </div>
+        <!-- end pure grid group -->
+
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-2-3">
+                <div id="vis2"  class="vis-container"></div>
+            </div>
+            <div class="pure-u-1-3">
+                <div class="description description-right">
+                    <h2>Age-standardised Suicide Rates</h2>
+                    <p>In order to measure changes over time, age-standardised suicide rates are presented in the graph on the left. Australians aged between 35 to 54, and 85 and above were more likely to die by suicide than those in other age cohorts. The <b>highest death rate</b> of 21.3 was achieved by the 45 to 54 year-old age group at 2015.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
         </div>
-      
-    </div>
-    <!-- end pure grid group -->
+        <!-- end pure grid group -->
+
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-3">
+                <div class="description description-left">
+                    <h2>Suicide by Year and Sex</h2>
+                    <p>The map highlights the stark contrast between regions, with the Northern Territory exhibiting the <b>highest rate</b> at 19.7 per 100,000 people, underscoring a concerning issue. In contrast, Victoria's 10.5 rate sheds light on factors and emphasizes targeted interventions and support.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+            <div class="pure-u-2-3">
+                <div id="vis3" class="vis-container"></div>
+            </div>
+        </div>
+        <!-- end pure grid group -->
+
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-2-3">
+                <div id="vis4" class="vis-container"></div>
+            </div>
+            <div class="pure-u-1-3">
+                <div class="description description-right">
+                    <h2>Risk Factors</h2>
+                    <p>
+                        Given that individuals can have multiple risk factors simultaneously, it's important to note that the proportion of suicide deaths attributed to each specified risk factor may be counted in more than one category, resulting in a distribution of percentages across various risk factors. As a result, the cumulative percentage for all risk factors in a given year may exceed 100%.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end pure grid group -->
   
-    <div class="pure-g">
-      <div class="pure-u-1-1 small-font">
-        <p>This visualisation is created by <a href="https://github.com/kkho0019" target="_blank">Kai Wen Khor</a>. The datasource is <a href="https://www.abs.gov.au/statistics/health/causes-death/causes-death-australia/2022#key-statistics" target="_blank">Australian Bureau of Statistics</a>.</p>
-        <p><u>Reference</u></p>
-        <ul>
-            <li>Australian Bureau of Statistics. (2022). Causes of Death, Australia. ABS. <a href="https://www.abs.gov.au/statistics/health/causes-death/causes-death-australia/2022" target="_blank">https://www.abs.gov.au/statistics/health/causes-death/causes-death-australia/2022</a>.</li>
-          </ul>
-      </div>
-    </div>
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-1 small-font">
+                <p>This visualisation is created by <a href="https://github.com/kkho0019" target="_blank">Kai Wen Khor</a>. The datasource is <a href="https://www.abs.gov.au/statistics/health/causes-death/causes-death-australia/2022#key-statistics" target="_blank">Australian Bureau of Statistics</a>.</p>
+                <p><u>Reference</u></p>
+                <ul>
+                    <li>Australian Bureau of Statistics. (2022). Causes of Death, Australia. ABS. <a href="https://www.abs.gov.au/statistics/health/causes-death/causes-death-australia/2022" target="_blank">https://www.abs.gov.au/statistics/health/causes-death/causes-death-australia/2022</a>.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- end pure grid group -->
   
-
-  </div> <!-- end page -->
+    </div> <!-- end page -->
    
-<script type="text/javascript">
-  var specVis1 = "./js/worldmap.vg.json";
-  var specVis2= "./js/line-chart-responsive.vg.json";
-  var specVis3= "./js/line-chart-responsive.vg.json";
-
-  vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  
-   vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-
-   vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
+    <script type="text/javascript">
+        var specVis1 = "./js/worldmap.vg.json";
+        var specVis2 = "./js/line-chart-responsive.vg.json";
+        var specVis3 = "./js/bar-chart-responsive.vg.json";
+        var specVis4 = "./js/pie-chart-responsive.vg.json";
+      
+        vegaEmbed('#vis1', specVis1);
+        vegaEmbed('#vis2', specVis2);
+        vegaEmbed('#vis3', specVis3);
+        vegaEmbed('#vis4', specVis4);
+    </script>
+    
 </body>
 </html>
