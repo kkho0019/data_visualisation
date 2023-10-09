@@ -1,7 +1,26 @@
-﻿Risk factor,2018,2019,2020,2021,2022
-Depressive episode,44.4,42.4,41,35,34.9
-Suicide ideation,24,26.6,26.7,24.5,25.7
-Personal history of self-harm,25.1,24.8,25,20.3,21.5
-Other anxiety disorders,16.2,18.2,16.4,14.6,14.3
-Disruption of family by separation and divorce,16.8,16.3,13.9,13.9,14.3
-Other risk factors,110.6,114.7,111.5,98.3,104.2
+﻿risk_factor,year,rank
+Depressive episode,2018,1
+Personal history of self-harm,2018,2
+Suicide ideation,2018,3
+Disruption of family by separation and divorce,2018,4
+Other anxiety disorders,2018,5
+Depressive episode,2019,1
+Suicide ideation,2019,2
+Personal history of self-harm,2019,3
+Other anxiety disorders,2019,4
+Disruption of family by separation and divorce,2019,5
+Depressive episode,2020,1
+Suicide ideation,2020,2
+Personal history of self-harm,2020,3
+Other anxiety disorders,2020,4
+Disruption of family by separation and divorce,2020,5
+Depressive episode,2021,1
+Suicide ideation,2021,2
+Personal history of self-harm,2021,3
+Other anxiety disorders,2021,4
+Disruption of family by separation and divorce,2021,5
+Depressive episode,2022,1
+Suicide ideation,2022,2
+Personal history of self-harm,2022,3
+Other anxiety disorders,2022,4
+Disruption of family by separation and divorce,2022,5
