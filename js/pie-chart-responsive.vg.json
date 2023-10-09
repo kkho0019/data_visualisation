@@ -1,0 +1,26 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Common Risk Factors in Suicide 2022",
+    "width": "container",
+    "height": 300,
+    "data": {
+        "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/data/risk_factors.csv"
+    },
+    "mark": "arc",
+    "encoding": {
+        "theta": {
+            "field": "2022", "type": "quantitative"
+        },
+        "color": {
+            "field": "Risk factor", "type": "nominal"
+        },
+        "tooltip": [
+            {"field": "Risk factor", "type": "nominal"},
+            {
+                "field": "2022", 
+                "type": "quantitative",
+                "title": "Proportion (%)"
+            }
+        ]
+    }
+}
