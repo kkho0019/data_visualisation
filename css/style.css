@@ -86,7 +86,6 @@ h1 {
 }
 
 .container-top {
-    margin-bottom: 50px;
     padding: 36px;
     padding-left: 72px;
     padding-right: 72px;
@@ -95,7 +94,6 @@ h1 {
 }
 
 .container {
-    margin-bottom: 50px;
     padding: 36px;
     padding-top: 14px;
     padding-left: 72px;
@@ -105,7 +103,6 @@ h1 {
 }
 
 .container-bot {
-    margin-bottom: 50px;
     padding: 18px;
     padding-left: 72px;
     padding-right: 72px;
