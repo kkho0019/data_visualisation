@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 340,
+    "title": {
+        "text": "Top 5 Risk Factors in Suicide",
+        "fontSize": 16
+    },
+    "view": {
+        "strokeWidth": 0
+    },
+    "data": {
+        "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/data/risk_factors.csv"
+    },
+    "mark": {
+        "type": "line", 
+        "orient": "vertical"
+    },
+    "encoding": {
+        "x": {
+            "field": "year", 
+            "type": "ordinal",
+            "axis": {
+                "title": "Year",
+                "titleFontSize": 12,
+                "titlePadding": 12,
+                "labelAngle": 0
+            }
+        },
+        "y": {
+            "field": "rank", 
+            "type": "ordinal",
+            "axis": {
+                "title": "Rank",
+                "titleFontSize": 12,
+                "titlePadding": 12
+            }
+        },
+        "color": {
+            "field": "risk_factor", 
+            "type": "nominal",
+            "scale": {
+                "domain": ["Depressive episode", "Personal history of self-harm", "Suicide ideation", "Disruption of family by separation and divorce", "Other anxiety disorders"],
+                "range": ["#d1495b", "#30638e", "#30638e", "#30638e", "#30638e"]
+            },
+            "legend": null
+        }
+    }
+}
+  
