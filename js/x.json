@@ -1,0 +1,87 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "transparent",
+    "view": {
+        "strokeWidth": 0
+    },
+    "width": "container",
+    "height": 340,
+    "data": {
+        "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/data/mechanism_of_death.csv"
+    },
+    "transform": [
+        {"calculate":"parseInt(datum.Death_count)", "as": "Death_count"}
+    ],
+    "encoding": {
+        "y": {
+            "field": "Mechanism_of_death",
+            "type": "nominal",
+            "axis": {
+                "title": "Mechanism of Death",
+                "titleFontSize": 12,
+                "titlePadding": 12,
+                "labels": false,
+                "ticks": false
+            },
+            "sort": "-x"
+        },
+        "x": {
+            "field": "Death_count",
+            "type": "quantitative",
+            "scale": {
+                "domainMax": 2200
+            },
+            "axis": {
+                "title": "Number of Deaths",
+                "titleFontSize": 12,
+                "titlePadding": 12
+            }
+        }
+    },
+    "layer": [
+        {
+            "mark": "bar",
+            "encoding": {
+                "color": {
+                    "field": "Mechanism_of_death",
+                    "type": "nominal",
+                    "legend": null,
+                    "scale": {
+                        "domain": [
+                            "Hanging",
+                            "Poisonings",
+                            "Other",
+                            "Firearms",
+                            "Falls",
+                            "Contact with sharp object",
+                            "Drowning and submersion"
+                        ],
+                        "range": [
+                            "#ffa600",
+                            "#ff764a",
+                            "#ef5675",
+                            "#bc5090",
+                            "#7a5195",
+                            "#374c80",
+                            "#003f5c"
+                        ]
+                    }
+                }
+            }
+        }, 
+        {
+            "mark": {
+                "type": "text", 
+                "align": "left", 
+                "baseline": "middle",
+                "dx": 3
+            },
+            "encoding": {
+                "text": {
+                    "field": "Mechanism_of_death",
+                    "type": "ordinal"
+                }
+            }
+        }
+    ]
+}
