@@ -1,8 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Suicide by Year and Sex (2012-2022)",
+    "view": {
+        "strokeWidth": 0
+    },
     "width": "container",
-    "height": 300,
+    "height": 340,
     "data": {
         "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/data/year_of_occurrence.csv"
     },
@@ -11,16 +13,26 @@
         "y": {
             "aggregate": "sum", 
             "field": "Deaths",
-            "title": "Population",
-            "stack": "normalize"
+            "stack": "normalize",
+            "axis": {
+                "title": "Death Population",
+                "titleFontSize": 12,
+                "titlePadding": 12
+            }
         },
         "x": {
-            "field": "Year"
+            "field": "Year",
+            "axis": {
+                "title": "Year",
+                "titleFontSize": 12,
+                "titlePadding": 12,
+                "labelAngle": 0
+            }
         },
         "color": {
             "field": "Sex",
             "scale": {
-                "range": ["#6b1367", "#f58f20"]
+                "range": ["#18225c", "#ffa600"]
             }
         },
         "tooltip": [
