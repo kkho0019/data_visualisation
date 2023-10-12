@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-        "text": "Intentional Self Harm by State and Territory (2012-2022)",
-        "fontSize": 16
+    "background": "transparent",
+    "view": {
+        "strokeWidth": 0
     },
     "width": "container",
     "height": 422,
@@ -65,6 +65,10 @@
                         "type": "threshold",
                         "domain": [12,14,16,18,20],
                         "range": ["#eff3ff", "#c6dbef", "#9ecae1", "#6baed6", "#3182bd", "#08519c"]
+                    },
+                    "legend": {
+                        "orient": "none",
+                        "clipHeight": 1
                     }
                 },
                 "tooltip": [
