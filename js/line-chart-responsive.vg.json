@@ -1,15 +1,17 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Intentional Self Harm, Age-specific Death Rates",
     "data": {
         "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/data/age_specific_death_rates.csv"
     },
     "width": "container",
-    "height": 300,
+    "height": 340,
     "transform": [
         {
             "calculate": "datum.Death_Rate",
             "as": "Deaths per 100,000 population"
+        },
+        {
+            "filter": "datum.Age != '0-14'"
         }
     ],
     "layer": [
@@ -33,7 +35,9 @@
                     "field": "Year",
                     "timeUnit": "year",
                     "axis": {
-                        "title": "Year"
+                        "title": "Year",
+                        "titleFontSize": 12,
+                        "titlePadding": 12
                     }
                 },
                 "y": {
@@ -41,7 +45,12 @@
                     "aggregate": "mean",
                     "axis": {
                         "title": "Deaths per 100,000 Population",
-                        "tickCount": 5
+                        "titleFontSize": 12,
+                        "titlePadding": 12
+                    },
+                    "scale": {
+                        "domainMin": 10,
+                        "domainMax": 22
                     }
                 },
                 "color": {
