@@ -1,5 +1,4 @@
 State_Territory,Year,Deaths,Population
-New South Wales,2012,727,7304244
 New South Wales,2013,718,7404032
 New South Wales,2014,832,7508353
 New South Wales,2015,839,7616168
@@ -10,7 +9,6 @@ New South Wales,2019,963,8046748
 New South Wales,2020,910,8110610
 New South Wales,2021,894,8097062
 New South Wales,2022,911,8166525
-Victoria,2012,514,5651091
 Victoria,2013,552,5772669
 Victoria,2014,672,5894917
 Victoria,2015,686,6022322
@@ -21,7 +19,6 @@ Victoria,2019,735,6537305
 Victoria,2020,693,6615046
 Victoria,2021,675,6547822
 Victoria,2022,754,6630258
-Queensland,2012,631,4568687
 Queensland,2013,676,4652824
 Queensland,2014,658,4719653
 Queensland,2015,761,4777692
@@ -32,7 +29,6 @@ Queensland,2019,803,5088847
 Queensland,2020,782,5165613
 Queensland,2021,786,5215814
 Queensland,2022,773,5320711
-South Australia,2012,197,1656725
 South Australia,2013,203,1671488
 South Australia,2014,244,1686945
 South Australia,2015,233,1700668
@@ -43,7 +39,6 @@ South Australia,2019,250,1767395
 South Australia,2020,229,1790355
 South Australia,2021,229,1802601
 South Australia,2022,242,1821086
-Western Australia,2012,367,2425507
 Western Australia,2013,336,2486944
 Western Australia,2014,367,2517608
 Western Australia,2015,402,2540672
@@ -54,7 +49,6 @@ Western Australia,2019,416,2659625
 Western Australia,2020,385,2712912
 Western Australia,2021,390,2749365
 Western Australia,2022,377,2791432
-Tasmania,2012,71,511724
 Tasmania,2013,74,512231
 Tasmania,2014,69,513621
 Tasmania,2015,84,515117
@@ -65,7 +59,6 @@ Tasmania,2019,107,547841
 Tasmania,2020,89,557578
 Tasmania,2021,81,567239
 Tasmania,2022,87,571007
-Northern Territory,2012,48,235915
 Northern Territory,2013,33,241722
 Northern Territory,2014,56,242894
 Northern Territory,2015,48,244692
@@ -76,7 +69,6 @@ Northern Territory,2019,50,246559
 Northern Territory,2020,51,247428
 Northern Territory,2021,46,248151
 Northern Territory,2022,49,250233
-Australian Capital Territory,2012,24,376539
 Australian Capital Territory,2013,37,383257
 Australian Capital Territory,2014,38,388799
 Australian Capital Territory,2015,46,395813
