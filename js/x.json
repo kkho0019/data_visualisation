@@ -10,7 +10,7 @@
         "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/data/mechanism_of_death.csv"
     },
     "transform": [
-        {"calculate":"parseInt(datum.Death_count)", "as": "Death_count"}
+        {"calculate":"parseInt(datum.Death_count)", "as": "Death_count_int"}
     ],
     "encoding": {
         "y": {
@@ -23,10 +23,10 @@
                 "labels": false,
                 "ticks": false
             },
-            "sort": "-x"
+            "sort": {"op": "sum", "field": "Death_count_int", "order": "descending"}
         },
         "x": {
-            "field": "Death_count",
+            "field": "Death_count_int",
             "type": "quantitative",
             "scale": {
                 "domainMax": 2200
@@ -66,12 +66,24 @@
                             "#003f5c"
                         ]
                     }
-                }
+                },
+                "tooltip": [
+                    {
+                        "field": "Mechanism_of_death",
+                        "type": "ordinal",
+                        "title": "Mechanism"
+                    },
+                    {
+                        "field": "Death_count_int",
+                        "type": "quantitative",
+                        "title": "Deaths"
+                    }
+                ]
             }
         }, 
         {
             "mark": {
-                "type": "text", 
+                "type": "text",
                 "align": "left", 
                 "baseline": "middle",
                 "dx": 3
@@ -80,7 +92,19 @@
                 "text": {
                     "field": "Mechanism_of_death",
                     "type": "ordinal"
-                }
+                },
+                "tooltip": [
+                    {
+                        "field": "Mechanism_of_death",
+                        "type": "ordinal",
+                        "title": "Mechanism"
+                    },
+                    {
+                        "field": "Death_count_int",
+                        "type": "quantitative",
+                        "title": "Deaths"
+                    }
+                ]
             }
         }
     ]
