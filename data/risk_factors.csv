@@ -1,51 +1,51 @@
 ﻿risk_factor,year,proportion
-depressive_episode,2018,44.4
-suicidal_thoughts,2018,24
-self_harm_history,2018,25.1
-other_anxiety_disorders,2018,16.2
-family_disruption,2018,16.8
-relationship_problems,2018,11.4
-alcohol_intoxication,2018,9.7
-hallucinogen_in_blood,2018,7.1
-alcohol_in_blood,2018,10.2
-psychotropic_drug_in_blood,2018,11.2
-depressive_episode,2019,42.4
-suicidal_thoughts,2019,26.6
-self_harm_history,2019,24.8
-other_anxiety_disorders,2019,18.2
-family_disruption,2019,16.3
-relationship_problems,2019,14.3
-alcohol_intoxication,2019,10
-hallucinogen_in_blood,2019,6.7
-alcohol_in_blood,2019,9.4
-psychotropic_drug_in_blood,2019,11.1
-depressive_episode,2020,41
-suicidal_thoughts,2020,26.7
-self_harm_history,2020,25
-other_anxiety_disorders,2020,16.4
-family_disruption,2020,13.9
-relationship_problems,2020,12.6
-alcohol_intoxication,2020,11.4
-hallucinogen_in_blood,2020,10
-alcohol_in_blood,2020,8.2
-psychotropic_drug_in_blood,2020,9
-depressive_episode,2021,35
-suicidal_thoughts,2021,24.5
-self_harm_history,2021,20.3
-other_anxiety_disorders,2021,14.6
-family_disruption,2021,13.9
-relationship_problems,2021,11.7
-alcohol_intoxication,2021,10.8
-hallucinogen_in_blood,2021,8.2
-alcohol_in_blood,2021,6.9
-psychotropic_drug_in_blood,2021,6.8
-depressive_episode,2022,34.9
-suicidal_thoughts,2022,25.7
-self_harm_history,2022,21.5
-other_anxiety_disorders,2022,14.3
-family_disruption,2022,14.3
-relationship_problems,2022,13.2
-alcohol_intoxication,2022,9
-hallucinogen_in_blood,2022,7.4
-alcohol_in_blood,2022,6.8
-psychotropic_drug_in_blood,2022,4.4
+Depressive episode,2018,44.4
+Suicidal thoughts,2018,24
+Self harm history,2018,25.1
+Other anxiety disorders,2018,16.2
+Family disruption,2018,16.8
+Relationship problems,2018,11.4
+Alcohol intoxication,2018,9.7
+Hallucinogen in blood,2018,7.1
+Alcohol in blood,2018,10.2
+Psychotropic drug in blood,2018,11.2
+Depressive episode,2019,42.4
+Suicidal thoughts,2019,26.6
+Self harm history,2019,24.8
+Other anxiety disorders,2019,18.2
+Family disruption,2019,16.3
+Relationship problems,2019,14.3
+Alcohol intoxication,2019,10
+Hallucinogen in blood,2019,6.7
+Alcohol in blood,2019,9.4
+Psychotropic drug in blood,2019,11.1
+Depressive episode,2020,41
+Suicidal thoughts,2020,26.7
+Self harm history,2020,25
+Other anxiety disorders,2020,16.4
+Family disruption,2020,13.9
+Relationship problems,2020,12.6
+Alcohol intoxication,2020,11.4
+Hallucinogen in blood,2020,10
+Alcohol in blood,2020,8.2
+Psychotropic drug in blood,2020,9
+Depressive episode,2021,35
+Suicidal thoughts,2021,24.5
+Self harm history,2021,20.3
+Other anxiety disorders,2021,14.6
+Family disruption,2021,13.9
+Relationship problems,2021,11.7
+Alcohol intoxication,2021,10.8
+Hallucinogen in blood,2021,8.2
+Alcohol in blood,2021,6.9
+Psychotropic drug in blood,2021,6.8
+Depressive episode,2022,34.9
+Suicidal thoughts,2022,25.7
+Self harm history,2022,21.5
+Other anxiety disorders,2022,14.3
+Family disruption,2022,14.3
+Relationship problems,2022,13.2
+Alcohol intoxication,2022,9
+Hallucinogen in blood,2022,7.4
+Alcohol in blood,2022,6.8
+Psychotropic drug in blood,2022,4.4
