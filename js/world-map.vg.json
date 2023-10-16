@@ -5,7 +5,7 @@
         "strokeWidth": 0
     },
     "width": "container",
-    "height": 410,
+    "height": 400,
     "projection": {"type": "mercator"},
     "params": [
         {
@@ -80,7 +80,7 @@
                         "field": "Deaths per 100,000 Population",
                         "type": "quantitative",
                         "format": ".1f",
-                        "title": "Deaths per 100K Pop."
+                        "title": "Deaths per 100K population"
                     }
                 ]
             }
