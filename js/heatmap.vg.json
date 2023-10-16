@@ -1,0 +1,57 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "transparent",
+    "width":"container",
+    "height": 400,
+    "data": {
+        "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/data/risk_factors.csv"
+    },
+    "config": {
+        "view": {
+            "strokeWidth": 1,
+            "step": 50
+        },
+        "axis": {
+            "domain": false
+        }
+    },
+    "mark": "rect",
+    "encoding": {
+        "x": {
+            "field": "year",
+            "timeUnit": "year",
+            "type": "ordinal",
+            "axis": {
+                "title": "Year",
+                "titleFontSize": 12,
+                "titlePadding": 12
+            }
+        },
+        "y": {
+            "field": "risk_factor",
+            "type": "nominal",
+            "sort": null,
+            "axis": {
+                "title": "Risk Factor",
+                "titleFontSize": 12,
+                "titlePadding": 12
+            }
+        },
+        "color": {
+            "field": "proportion",
+            "aggregate": "max",
+            "type": "quantitative",
+            "legend": {"title": "Proportion (%)"},
+            "scale": {
+                "type": "threshold",
+                "domain": [10,20,30,40],
+                "range": ["#eff3ff","#bdd7e7","#6baed6","#3182bd","#08519c"]
+            }
+        },
+        "tooltip": [
+            {"field": "risk_factor", "title": "Risk factor"},
+            {"field": "year", "timeUnit": "year", "title": "Year"},
+            {"field": "proportion", "format": ".2f", "title": "Proportion (%)"}
+        ]
+    }
+}
