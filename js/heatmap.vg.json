@@ -51,7 +51,7 @@
         "tooltip": [
             {"field": "risk_factor", "title": "Risk factor"},
             {"field": "year", "timeUnit": "year", "title": "Year"},
-            {"field": "proportion", "format": ".2f", "title": "Proportion (%)"}
+            {"field": "proportion", "format": ".1f", "title": "Proportion (%)"}
         ]
     }
 }
