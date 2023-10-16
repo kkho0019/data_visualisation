@@ -1,26 +1,101 @@
-﻿risk_factor,year,rank,proportion
-Depressive episode,2018,1,44.4
-Personal history of self-harm,2018,2,25.1
-Suicide ideation,2018,3,24
-Disruption of family by separation and divorce,2018,4,16.8
-Other anxiety disorders,2018,5,16.2
-Depressive episode,2019,1,42.4
-Suicide ideation,2019,2,26.6
-Personal history of self-harm,2019,3,24.8
-Other anxiety disorders,2019,4,18.2
-Disruption of family by separation and divorce,2019,5,16.3
-Depressive episode,2020,1,41
-Suicide ideation,2020,2,26.7
-Personal history of self-harm,2020,3,25
-Other anxiety disorders,2020,4,16.4
-Disruption of family by separation and divorce,2020,5,13.9
-Depressive episode,2021,1,35
-Suicide ideation,2021,2,24.5
-Personal history of self-harm,2021,3,20.3
-Other anxiety disorders,2021,4,14.6
-Disruption of family by separation and divorce,2021,5,13.9
-Depressive episode,2022,1,34.9
-Suicide ideation,2022,2,25.7
-Personal history of self-harm,2022,3,21.5
-Other anxiety disorders,2022,4,14.3
-Disruption of family by separation and divorce,2022,5,14.3
+﻿risk_factor,year,proportion
+depressive_episode,2018,44.4
+suicidal_thoughts,2018,24
+self_harm_history,2018,25.1
+other_anxiety_disorders,2018,16.2
+family_disruption,2018,16.8
+relationship_problems,2018,11.4
+alcohol_intoxication,2018,9.7
+family_death,2018,9
+legal_issues,2018,8
+activity_limitation,2018,7.8`
+hallucinogen_in_blood,2018,7.1
+harmful_alcohol_use,2018,7.6
+mental_disorder,2018,4.5
+alcohol_in_blood,2018,10.2
+economic_problems,2018,7.9
+support_group_issues,2018,4.7
+family_absence,2018,3.1
+psychotropic_drug_in_blood,2018,11.2
+stress_and_adjustment,2018,3.7
+bipolar_disorder,2018,4.7
+depressive_episode,2019,42.4
+suicidal_thoughts,2019,26.6
+self_harm_history,2019,24.8
+other_anxiety_disorders,2019,18.2
+family_disruption,2019,16.3
+relationship_problems,2019,14.3
+alcohol_intoxication,2019,10
+family_death,2019,9.2
+legal_issues,2019,8.9
+activity_limitation,2019,6.4
+hallucinogen_in_blood,2019,6.7
+harmful_alcohol_use,2019,7.4
+mental_disorder,2019,4.2
+alcohol_in_blood,2019,9.4
+economic_problems,2019,8.6
+support_group_issues,2019,4.4
+family_absence,2019,3.3
+psychotropic_drug_in_blood,2019,11.1
+stress_and_adjustment,2019,5.4
+bipolar_disorder,2019,5.4
+depressive_episode,2020,41
+suicidal_thoughts,2020,26.7
+self_harm_history,2020,25
+other_anxiety_disorders,2020,16.4
+family_disruption,2020,13.9
+relationship_problems,2020,12.6
+alcohol_intoxication,2020,11.4
+family_death,2020,9.1
+legal_issues,2020,8.6
+activity_limitation,2020,6.4
+hallucinogen_in_blood,2020,10
+harmful_alcohol_use,2020,7.7
+mental_disorder,2020,4.5
+alcohol_in_blood,2020,8.2
+economic_problems,2020,6.7
+support_group_issues,2020,3.8
+family_absence,2020,4.2
+psychotropic_drug_in_blood,2020,9
+stress_and_adjustment,2020,4.9
+bipolar_disorder,2020,4.4
+depressive_episode,2021,35
+suicidal_thoughts,2021,24.5
+self_harm_history,2021,20.3
+other_anxiety_disorders,2021,14.6
+family_disruption,2021,13.9
+relationship_problems,2021,11.7
+alcohol_intoxication,2021,10.8
+family_death,2021,7.5
+legal_issues,2021,6.8
+activity_limitation,2021,6.8
+hallucinogen_in_blood,2021,8.2
+harmful_alcohol_use,2021,7.1
+mental_disorder,2021,5.9
+alcohol_in_blood,2021,6.9
+economic_problems,2021,4.6
+support_group_issues,2021,3.3
+family_absence,2021,3.5
+psychotropic_drug_in_blood,2021,6.8
+stress_and_adjustment,2021,4
+bipolar_disorder,2021,4.4
+depressive_episode,2022,34.9
+suicidal_thoughts,2022,25.7
+self_harm_history,2022,21.5
+other_anxiety_disorders,2022,14.3
+family_disruption,2022,14.3
+relationship_problems,2022,13.2
+alcohol_intoxication,2022,9
+family_death,2022,8.7
+legal_issues,2022,8.7
+activity_limitation,2022,8.2
+hallucinogen_in_blood,2022,7.4
+harmful_alcohol_use,2022,7.4
+mental_disorder,2022,7
+alcohol_in_blood,2022,6.8
+economic_problems,2022,6.1
+support_group_issues,2022,4.9
+family_absence,2022,4.6
+psychotropic_drug_in_blood,2022,4.4
+stress_and_adjustment,2022,3.9
+bipolar_disorder,2022,3.9
