@@ -5,7 +5,7 @@
         "strokeWidth": 0
     },
     "width": "container",
-    "height": 422,
+    "height": 410,
     "projection": {"type": "mercator"},
     "params": [
         {
@@ -99,5 +99,8 @@
                 "stroke": null
             }
         }
-    ]
+    ],
+    "config": {
+        
+    }
 }

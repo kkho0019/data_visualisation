@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "transparent",
     "data": {
         "url": "https://raw.githubusercontent.com/kkho0019/data_visualisation/main/data/age_specific_death_rates.csv"
     },
@@ -56,7 +57,29 @@
                 "color": {
                     "field": "Age",
                     "type": "nominal",
-                    "title": "Age Range"
+                    "title": "Age Range",
+                    "scale": {
+                        "domain": [
+                            "15-24", 
+                            "25-34", 
+                            "35-44", 
+                            "45-54", 
+                            "55-64", 
+                            "65-74", 
+                            "75-84", 
+                            "85+"
+                        ],
+                        "range": [
+                            "#003f5c", 
+                            "#2f4b7c", 
+                            "#f95d6a", 
+                            "#a05195", 
+                            "#d45087", 
+                            "#665191", 
+                            "#ff7c43", 
+                            "#ffa600"
+                        ]
+                    }
                 },
                 "opacity": {
                     "condition": {

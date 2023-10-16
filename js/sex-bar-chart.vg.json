@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "transparent",
     "view": {
         "strokeWidth": 0
     },
@@ -32,7 +33,7 @@
         "color": {
             "field": "Sex",
             "scale": {
-                "range": ["#18225c", "#ffa600"]
+                "range": ["#ef5675", "#374c80"]
             }
         },
         "tooltip": [
